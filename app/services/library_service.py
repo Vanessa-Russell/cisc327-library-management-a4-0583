@@ -6,7 +6,7 @@ interacting with the database module to manage book, patron, and loan data.
 
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
-from database import (
+from ..database import (
     get_book_by_id, get_book_by_isbn, get_patron_borrow_count,
     insert_book, insert_borrow_record, update_book_availability,
     update_borrow_record_return_date, get_all_books, 

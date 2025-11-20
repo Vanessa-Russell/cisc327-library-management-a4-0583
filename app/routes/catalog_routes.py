@@ -3,8 +3,8 @@ Catalog Routes - Book catalog related endpoints
 """
 
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from database import get_all_books
-from library_service import add_book_to_catalog
+from ..services.library_service import add_book_to_catalog
+from ..database import get_all_books
 
 catalog_bp = Blueprint('catalog', __name__)
 
